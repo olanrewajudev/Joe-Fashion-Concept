@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.scrollsdown::-webkit-scrollbar {
+  height: 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 14rem;
+}
+
+.spins {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid white;
+  border-radius: 50%;
+  animation: spins 600ms linear infinite;
+}
+
+@keyframes spins {
+  to {
+    transform: rotate(360deg);
+  }
+}
